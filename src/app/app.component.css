@@ -71,4 +71,17 @@ th, td {
     text-align: center;
 }
 
-/* Puedes agregar más estilos según tus necesidades */
+.container__table { 
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__table__users {
+    width: 50%;
+    padding: 20px;
+}
+
+.container__table__locations {
+    width: 50%;
+    padding: 20px;
+}

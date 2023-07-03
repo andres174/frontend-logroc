@@ -3,7 +3,7 @@
 </header>
 <section class="banner">
   <p>
-    LUIS ANTONIO MACÍAS BERMEO - 
+    LUIS ANTONIO MACÍAS BERMEO -
     ANDRES FERNANDO ZAMBRANO CAICEDO -
     MARÍA MAGDALENA MOREIRA LOOR
 
@@ -14,7 +14,7 @@
     <h2>Descripción de la Tarea</h2>
     <p>Esta página está desplegada en Firebase y es un proyecto de Angular.</p>
     <p>
-      En la sección inferior podemos hacer una consulta HTTPS a una API desplegada 
+      En la sección inferior podemos hacer una consulta HTTPS a una API desplegada
       en GCP usando Cloud Build con Python y FLask.
     </p>
   </div>
@@ -23,29 +23,125 @@
   </div>
 </section>
 <section class="datos">
-  <!-- <h2>Consumo de la API</h2>
-  <button (click)="getUsers()" >Mostrar Usuarios</button>
+  <h2>Consumo de la API</h2>
+  <button (click)="getUsers()">Mostrar Usuarios</button>
   <button (click)="getLocations()">Mostrar Locaciones</button>
-  <div class="container__table__users" *ngIf="is_user">
-    <table id="tablaDatos1">
-      <thead>
-        <tr>
-          <th>
-            UserId
-          </th>
-          <th>
-            Nombre
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {{users | json}}
-        
-      </tbody>
-  </table>
+  <div class="container__table">
+    <div class="container__table__users" *ngIf="is_user">
+
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {{users[0].userId}}
+            </td>
+            <td>
+              {{users[0].name}}
+            </td>
+            <td>
+              {{users[0].city}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{users[1].userId}}
+            </td>
+            <td>
+              {{users[1].name}}
+            </td>
+            <td>
+              {{users[1].city}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{users[2].userId}}
+            </td>
+            <td>
+              {{users[2].name}}
+            </td>
+            <td>
+              {{users[2].city}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{users[3].userId}}
+            </td>
+            <td>
+              {{users[3].name}}
+            </td>
+            <td>
+              {{users[3].city}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container__table__locations" *ngIf="is_locations">
+  
+      <table>
+        <thead>
+          <tr>
+            <th>Location ID</th>
+            <th>Name</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {{locations[0].locationId}}
+            </td>
+            <td>
+              {{locations[0].name}}
+            </td>
+            <td>
+              {{locations[0].rating}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{locations[1].locationId}}
+            </td>
+            <td>
+              {{locations[1].name}}
+            </td>
+            <td>
+              {{locations[1].rating}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{locations[2].locationId}}
+            </td>
+            <td>
+              {{locations[2].name}}
+            </td>
+            <td>
+              {{locations[2].rating}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              {{locations[3].locationId}}
+            </td>
+            <td>
+              {{locations[3].name}}
+            </td>
+            <td>
+              {{locations[3].rating}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div class="container__table__locations">
-    <table id="tablaDatos2">
-  </table>
-  </div> -->
 </section>

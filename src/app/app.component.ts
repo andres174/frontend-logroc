@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend-logroc';
-  users: any = [];
-  locations: any = [];
+  users: any ;
+  locations: any;
 
   is_user: boolean = false;
   is_locations: boolean = false;
